@@ -69,11 +69,11 @@ $dataFormatada = formatarData($nascimento);
                             </div>
                             <p class="texto">Os dados da proposta e os termos da doação serão encaminhados em breve para e-mail informado.</p>
                             
-                              <a href="index.php" class="butao3" >Volta ao Início</a>
+                          
                         </div>
 
 
-        
+            <a href="index.php" class="butao3" >Volta ao Início</a>
 <?php 
                     include("email.php");
                     include("rodapecarregando.php");
