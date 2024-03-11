@@ -62,6 +62,26 @@
         text-decoration: none; /* Removendo o sublinhado do texto*/
         color: inherit; /*Mantendo a cor padrão*/
     }
+    .butao3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 35px;
+                padding: 0 16px;
+                border-radius: 8px;
+                background: #A6193C;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.165px;
+                text-align: center;
+            }
+            .butao3:hover {
+                text-decoration: none; 
+                color: #FFF;
+            }
 
 
 </style>

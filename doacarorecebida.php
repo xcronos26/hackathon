@@ -68,6 +68,8 @@ $dataFormatada = formatarData($nascimento);
                                 </svg>
                             </div>
                             <p class="texto">Os dados da proposta e os termos da doação serão encaminhados em breve para e-mail informado.</p>
+                            
+                              <a href="index.php" class="butao3" >Volta ao Início</a>
                         </div>
 
 
