@@ -1,8 +1,21 @@
 {
+    "name": "lucas/hackathon",
+    "autoload": {
+        "psr-4": {
+            "Lucas\\Hackathon\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucas Nunes",
+            "email": "lucasde94@gmail.com"
+        }
+    ],
     "require": {
-        "monolog/monolog": "^1.0",
+         "monolog/monolog": "^1.0",
         "bacon/bacon-qr-code": "^2.0",
         "endroid/qr-code": "^4.3",
-        "chillerlan/php-qrcode": "^3.4"
+        "chillerlan/php-qrcode": "^3.4",
+        "vlucas/phpdotenv": "^5.6"
     }
 }

@@ -1,9 +1,15 @@
 <?php
-    $host = "108.181.92.68";
-    $user = "primeiro";
-    $pass = "12qwaszx";
-    $base = "primeiro";
 
+require 'vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
+$dotenv->load();
+
+// Acesse suas variáveis de ambiente usando getenv()
+$host = getenv('DB_HOST');
+$user = getenv('DB_USERNAME');
+$pass = getenv('DB_PASSWORD');
+$base = getenv('DB_BASE');
     $conn = new mysqli($host, $user, $pass, $base);
 
     //opcional: mostrar o erro caso não consiga conectar

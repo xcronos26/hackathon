@@ -4,6 +4,9 @@ include ("config.php");
 require_once 'phpqrcode/qrlib.php';
 require __DIR__ . '/vendor/autoload.php';
 
+$clientId = getenv('CLIENT_ID');
+$clientSecret = getenv('CLIENT_SECRET');
+
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -15,7 +18,12 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS => 'client_id=158b537c-79ff-4be3-9aca-f67e9f0c42d4&client_secret=b4833f04ea48c3495ab7fd249c39122c&grant_type=client_credentials&scope=cob.write',
+     CURLOPT_POSTFIELDS => http_build_query(array(
+        'client_id' => $clientId,
+        'client_secret' => $clientSecret,
+        'grant_type' => 'client_credentials',
+        'scope' => 'cob.write'
+    )),
   CURLOPT_HTTPHEADER => array(
     'Content-Type: application/x-www-form-urlencoded'
   ),
