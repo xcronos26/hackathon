@@ -1,5 +1,5 @@
 <?php
-//$valor = "0,02";
+
 include ("config.php");
 require_once 'phpqrcode/qrlib.php';
 require __DIR__ . '/vendor/autoload.php';

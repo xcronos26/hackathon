@@ -31,7 +31,7 @@
                          <p style="font-size: 10px;">Tempo restante para realizar pagamento</p>
                         
                         
-                        <button onclick="carregar()">aaaaaaaaaaaa</button>
+                       
                     </center>
                     </div>
 				</div>
